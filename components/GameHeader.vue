@@ -1,17 +1,22 @@
 <script lang="ts" setup>
+import { UiButton } from "sea-battle-ui-lib";
 interface Props {
   freeBlocks: number;
+  board: BoardCell[];
 }
-defineProps<Props>();
+const props = defineProps<Props>();
+const onStart = () => {
+  useFetch("http://localhost:3000/api/board/create-board", {
+    method: "POST",
+    body: props.board,
+  });
+  navigateTo("/game");
+};
 </script>
 <template>
   <div class="flex items-center mb-3 text-2xl pl-[40px] justify-between">
-    <p>Свободных блоков: {{ freeBlocks }}</p>
-    <button
-      class="bg-rose-400 hover:bg-rose-300 py-2 px-4 rounded-xl text-white"
-    >
-      Старт
-    </button>
+    <p class="text-semyon-500 mr-2">Свободных блоков: {{ freeBlocks }}</p>
+
+    <UiButton size="lg" @click="onStart">Старт</UiButton>
   </div>
 </template>
-<style></style>

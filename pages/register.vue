@@ -43,7 +43,7 @@ const onSubmit = handleSubmit(async (values) => {
       position: "topCenter",
     });
   } else {
-    navigateTo("/login");
+    navigateTo("/");
   }
 });
 </script>
@@ -76,7 +76,7 @@ const onSubmit = handleSubmit(async (values) => {
         'cursor-not-allowed opacity-45': !meta.valid || isSubmitting,
       }"
     >
-      Зарегистрироваться
+      Присоединиться к игре
     </button>
   </form>
 </template>

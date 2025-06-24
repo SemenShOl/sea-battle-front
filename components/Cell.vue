@@ -12,7 +12,7 @@ defineEmits<Emits>();
 <template>
   <div
     @click="$emit('click')"
-    class="h-[70px] rounded"
+    class="h-[50px] rounded"
     :class="{
       'hover:bg-cyan-300 bg-cyan-200': cell.isFree,
       'bg-slate-400': !cell.isFree,

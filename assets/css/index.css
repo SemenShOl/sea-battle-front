@@ -1,12 +1,22 @@
-body {
-  height: 100vh;
-  font-family: "UbuntuCondensed", sans-serif;
-}
-
 @font-face {
   font-family: "UbuntuCondensed";
   src: url("/fonts/UbuntuCondensed-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  font-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: "UbuntuCondensed", sans-serif;
+}
+
+button {
+  border: none;
 }

@@ -22,7 +22,7 @@ const onSubmit = handleSubmit(async (values) => {
   const { error } = await useFetch(
     `${import.meta.env.VITE_API_BASE_URL}/api/users/login`,
     {
-      method: "GET",
+      method: "POST",
       body: values,
     }
   );

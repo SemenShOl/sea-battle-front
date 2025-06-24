@@ -1,7 +1,7 @@
 <script></script>
 
 <template>
-  <div class="w-[800px] mx-auto">
+  <div class="py-4 bg-neutral-100 flex flex-col items-center h-full">
     <slot />
   </div>
 </template>

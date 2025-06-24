@@ -10,11 +10,11 @@ defineEmits<Emits>();
 </script>
 
 <template>
-  <div class="flex w-full">
+  <div class="flex w-[600px]">
     <div class="flex flex-col gap-2">
       <div
         v-for="letter in alphabet"
-        class="h-[70px] text-2xl flex justify-center items-center p-4"
+        class="h-[50px] text-2xl flex justify-center items-center p-4"
       >
         {{ letter }}
       </div>
@@ -26,7 +26,7 @@ defineEmits<Emits>();
         @click="$emit('click', cell)"
       ></Cell>
       <div v-for="number in 10">
-        <div class="w-[70px] text-2xl flex justify-center p-2">
+        <div class="w-[50px] text-2xl flex justify-center p-2">
           {{ number }}
         </div>
       </div>

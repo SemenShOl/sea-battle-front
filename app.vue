@@ -1,7 +1,5 @@
-<script></script>
-
 <template>
-  <div>
+  <div class="h-[100vh]">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

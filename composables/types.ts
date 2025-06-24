@@ -8,3 +8,12 @@ export type User = {
   login: string;
   age: number;
 };
+
+export type Task = {
+  id: string;
+  title: string;
+  description: string;
+  isCompleted: boolean;
+};
+
+export type TaskDto = Omit<Task, "id">;
